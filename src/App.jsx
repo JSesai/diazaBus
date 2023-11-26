@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Login, AuthMainHub } from "./index";
+import { Login, AuthMainHub, MainHub } from "./index";
 function App() {
 
   return (
@@ -7,11 +7,12 @@ function App() {
       <Routes>
         <Route path="/" >
           <Route index element={<Login />} />
+          <Route path="mainhub" element={<MainHub />} />
         </Route>
 
-        <Route path="/mainhub" element={<AuthMainHub />} >
-          <Route index element={<Login />} />
-        </Route>
+        {/* <Route path="/mainhub" element={<AuthMainHub />} >
+          <Route  element={<MainHub />} />
+        </Route> */}
 
       </Routes>
 
