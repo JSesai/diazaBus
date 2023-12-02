@@ -1,6 +1,6 @@
-import React from 'react'
+ 
 
-export default function mainHub() {
+export default function MainHub() {
   return (
     <div>
       desde main hub
