@@ -116,7 +116,14 @@ const navigate = useNavigate();
                 className="flex justify-center items-center   text-cyan-600 "
                        
                      to="olvide-password"
-                    >Olvide mi password!</Link>  
+                    >Olvidé mi password!
+            </Link>  
+            <Link 
+                className="flex justify-center items-center   text-cyan-600 "
+                       
+                     to="registrar-usuario"
+                    >Crea una cuenta nueva!
+            </Link> 
                 </div>
                
             </div>

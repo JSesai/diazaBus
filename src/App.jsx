@@ -19,12 +19,13 @@ function App() {
               <Route index element={<Login />} />             
               <Route path="olvide-password" element={<PassForgotten/>}/>
               <Route path="olvide-password/:token" element={<NewPassword/>}/>
+              <Route path="registrar-usuario" element={<UserRegistration/>}/>
             
             </Route>
             {/* Area privada*/}
             <Route path="/mainhub" element={<ProtectedRoutes/>}>
               <Route index element={<MainHub/>}/>
-              <Route path="registrar-usuario" element={<UserRegistration/>}/>
+            
           
 
             </Route>
